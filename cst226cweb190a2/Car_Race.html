@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Race</title>
+    <!--
+        Filename: Car_Race.html
+        Author:   Logan Davis (cst226)
+        Date: FEB 28th 2022
+        Purpose:display webpage
+    -->
+
+
+    <style>
+        .vertical {
+            border-left: 1px solid black;
+            height: 1000px;
+            position: fixed;
+
+            left: 1345px;
+        }
+        .hori{
+            border-bottom: 1px solid black;
+            width: 1000px;
+            position: fixed;
+            left: 345px;
+        }
+    </style>
+    <script src="scripts/Car_Race.js" defer></script>
+    <link rel="stylesheet" href="Car_Race.css">
+</head>
+<body>
+<h1> Saskatoon 500 Pixel Car Race </h1>
+<p id="btns">   <input type="button" value="Start Race!" id="Start" />  <input type="button" value="Reset Race!" id="reset" />  <input type="button" value="View Statistics" id="btnCick" />  </p>
+
+
+<div class = "hori"></div>
+<div class = "vertical"></div>
+
+<!--<div><img id="Classic" src="images/car1.png" height="161" width="345" style="top: 150px; left: 0px"/></div>-->
+<!--<div><img id="Bug"  src="images/car2.png" height="161" width="345" style="top: 350px; left: 0px"/></div>-->
+<!--<div><img id="Hatchback"  src="images/car3.png" height="161" width="345" style="top: 550px; left: 0px"/></div>-->
+<!--<div><img id="Sedan"  src="images/car4.png" height="161" width="345" style="top: 750px; left: 0px"/></div>-->
+<p id="po"></p>
+<div id="Classic"></div>
+<div id="Bug"> </div>
+<div id="Hatchback"></div>
+<div id="Sedan"></div>
+
+</body>
+</html>

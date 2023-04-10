@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  
+  Filename: parking.html
+  Author:   Logan Davis (cst226)
+  Date:     March 25th 2022
+  Purpose:  Provide the HTML
+-->
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/form.css" />
+        <title>Staff Parking Information</title>
+        <script src="scripts/parking.js"></script>
+        <script src="scripts/jquery-3.6.0.min.js"></script>
+        <script src="scripts/jquery.validate.min.js"></script>
+        <script src="scripts/JQueryValidateParking.js"></script>
+
+
+    </head>
+
+    <body>
+        <form id="parkingForm" action="#">
+            <fieldset>
+                <label for="fullName">Full Name (last, first)</label>
+                <input type="text" id="fullName" name="fullName" required/>
+
+                <label for="licensePlate">License Plate</label>
+                <input type="text" id="licensePlate" name="licensePlate" required/>
+
+                <label for="parkingPass">Parking Pass Number</label>
+                <input type="text" id="parkingPass" name="parkingPass" required />
+                
+                <input type="submit" value="Add" />
+                <input type="reset" value="Clear" />
+            </fieldset>
+        </form>
+        
+        <form id="requestForm" action="#">
+            <fieldset>
+                <label for="plate">Select a license plate:</label>
+                <select id="plate">
+<!--                    <option value="999: Coralee Kaban">ABC 123</option>-->
+<!--                    <option value="7: Michael Grzesina">XYZ 789</option>-->
+                </select>
+
+                <label for="selectedData">Parking data is:</label>
+                <input type="text" id="selectedData"
+                       readonly="readonly" />
+            </fieldset>
+        </form>
+
+        <p>License plates added:</p>
+        <p id="Plates">No plates added yet</p>
+    </body>
+</html>
